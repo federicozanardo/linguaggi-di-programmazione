@@ -1,0 +1,13 @@
+xA5 = 0;
+while(x) {
+    xA5 += 5;
+    if(true) {
+        x += 6
+    }
+    if(false) {
+        x += 1
+    }
+}
+if(x <= 5) {
+    x += 6;
+}

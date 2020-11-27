@@ -1,0 +1,62 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: d690650bbcaa01cc95ef798bdf7f3c98ed7babf8f71692decf02c150208862b0
+
+name:           Tree
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/Github username here/Tree#readme>
+homepage:       https://github.com/Github username here/Tree#readme
+bug-reports:    https://github.com/Github username here/Tree/issues
+author:         Author name here
+maintainer:     Author email here
+copyright:      2019 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/Github username here/Tree
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_Tree
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable Tree-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_Tree
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Tree
+    , base >=4.7 && <5
+  default-language: Haskell2010
+
+test-suite Tree-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_Tree
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Tree
+    , base >=4.7 && <5
+  default-language: Haskell2010
