@@ -1,4 +1,4 @@
-# YACC-espressioni
+# YACC-expressions
 ## Example of YACC and (F)LEX program - Programming Languages course (UniUD)
 
 ### Description
